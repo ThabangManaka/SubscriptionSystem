@@ -12,11 +12,11 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
 login(user: UserForLogin) {
-    return this.http.post(this.baseUrl + '/account/login', user);
+    return this.http.post(this.baseUrl + '/auth/login', user);
 }
 
 registerUser(user: UserForRegister) {
-    return this.http.post(this.baseUrl + '/account/register', user);
+    return this.http.post(this.baseUrl + '/user/register', user);
 }
 isLoggedIn(): boolean {
 
