@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BackEnd.Interfaces/1.0.0": {
+        "dependencies": {
+          "BackEnd.Dtos": "1.0.0",
+          "BackEnd.Models": "1.0.0"
+        },
+        "runtime": {
+          "BackEnd.Interfaces.dll": {}
+        }
+      },
+      "BackEnd.Dtos/1.0.0": {
+        "runtime": {
+          "BackEnd.Dtos.dll": {}
+        }
+      },
+      "BackEnd.Models/1.0.0": {
+        "runtime": {
+          "BackEnd.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BackEnd.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BackEnd.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BackEnd.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

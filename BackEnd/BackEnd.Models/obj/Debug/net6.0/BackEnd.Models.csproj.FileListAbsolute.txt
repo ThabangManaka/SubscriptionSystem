@@ -1,0 +1,12 @@
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\bin\Debug\net6.0\BackEnd.Models.deps.json
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\bin\Debug\net6.0\BackEnd.Models.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\bin\Debug\net6.0\ref\BackEnd.Models.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\bin\Debug\net6.0\BackEnd.Models.pdb
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\BackEnd.Models.csproj.AssemblyReference.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\BackEnd.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\BackEnd.Models.AssemblyInfoInputs.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\BackEnd.Models.AssemblyInfo.cs
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\BackEnd.Models.csproj.CoreCompileInputs.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\BackEnd.Models.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\ref\BackEnd.Models.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Models\obj\Debug\net6.0\BackEnd.Models.pdb

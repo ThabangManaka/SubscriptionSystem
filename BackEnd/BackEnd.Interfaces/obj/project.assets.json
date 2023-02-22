@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "BackEnd.Dtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BackEnd.Dtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BackEnd.Dtos.dll": {}
+        }
+      },
+      "BackEnd.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BackEnd.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BackEnd.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BackEnd.Dtos/1.0.0": {
+      "type": "project",
+      "path": "../BackEnd.Dtos/BackEnd.Dtos.csproj",
+      "msbuildProject": "../BackEnd.Dtos/BackEnd.Dtos.csproj"
+    },
+    "BackEnd.Models/1.0.0": {
+      "type": "project",
+      "path": "../BackEnd.Models/BackEnd.Models.csproj",
+      "msbuildProject": "../BackEnd.Models/BackEnd.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "BackEnd.Dtos >= 1.0.0",
+      "BackEnd.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Manaka\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Manaka\\SubscriptionSystem\\BackEnd\\BackEnd.Interfaces\\BackEnd.Interfaces.csproj",
+      "projectName": "BackEnd.Interfaces",
+      "projectPath": "C:\\Users\\Manaka\\SubscriptionSystem\\BackEnd\\BackEnd.Interfaces\\BackEnd.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\Manaka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Manaka\\SubscriptionSystem\\BackEnd\\BackEnd.Interfaces\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Manaka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Manaka\\SubscriptionSystem\\BackEnd\\BackEnd.Dtos\\BackEnd.Dtos.csproj": {
+              "projectPath": "C:\\Users\\Manaka\\SubscriptionSystem\\BackEnd\\BackEnd.Dtos\\BackEnd.Dtos.csproj"
+            },
+            "C:\\Users\\Manaka\\SubscriptionSystem\\BackEnd\\BackEnd.Models\\BackEnd.Models.csproj": {
+              "projectPath": "C:\\Users\\Manaka\\SubscriptionSystem\\BackEnd\\BackEnd.Models\\BackEnd.Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.114\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\BackEnd.Interfaces.deps.json
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\BackEnd.Interfaces.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\ref\BackEnd.Interfaces.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\BackEnd.Interfaces.pdb
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\BackEnd.Dtos.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\BackEnd.Models.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\BackEnd.Dtos.pdb
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\bin\Debug\net6.0\BackEnd.Models.pdb
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.csproj.AssemblyReference.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.AssemblyInfoInputs.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.AssemblyInfo.cs
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.csproj.CopyComplete
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\ref\BackEnd.Interfaces.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Interfaces\obj\Debug\net6.0\BackEnd.Interfaces.pdb

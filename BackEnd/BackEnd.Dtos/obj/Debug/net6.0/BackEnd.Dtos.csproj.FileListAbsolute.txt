@@ -1,0 +1,12 @@
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\bin\Debug\net6.0\BackEnd.Dtos.deps.json
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\bin\Debug\net6.0\BackEnd.Dtos.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\bin\Debug\net6.0\ref\BackEnd.Dtos.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\bin\Debug\net6.0\BackEnd.Dtos.pdb
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\BackEnd.Dtos.csproj.AssemblyReference.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\BackEnd.Dtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\BackEnd.Dtos.AssemblyInfoInputs.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\BackEnd.Dtos.AssemblyInfo.cs
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\BackEnd.Dtos.csproj.CoreCompileInputs.cache
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\BackEnd.Dtos.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\ref\BackEnd.Dtos.dll
+C:\Users\Manaka\SubscriptionSystem\BackEnd\BackEnd.Dtos\obj\Debug\net6.0\BackEnd.Dtos.pdb
