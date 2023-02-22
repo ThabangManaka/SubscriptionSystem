@@ -18,7 +18,7 @@ public class SubscriptionController : Controller
     }
 
 
-    [HttpGet]
+    [HttpGet("get")]
     public IEnumerable<Subscription> Get()
     {
         try
@@ -30,8 +30,8 @@ public class SubscriptionController : Controller
             throw;
         }
     }
-    [HttpPost("post")]
-    public HttpResponseMessage AddOrder([FromBody] Subscription subscriptions)
+    [HttpPost("add")]
+    public HttpResponseMessage AddSubscription([FromBody] Subscription subscriptions)
     {
 
         try

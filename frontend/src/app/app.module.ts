@@ -11,6 +11,8 @@ import { SubscriptionComponent } from './subscription/subscription.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    SharedModule,
     FormsModule,
     ReactiveFormsModule,
     MaterialModule

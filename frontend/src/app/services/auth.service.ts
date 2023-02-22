@@ -23,4 +23,13 @@ isLoggedIn(): boolean {
   return localStorage.getItem('currentUser')!=null;
 }
 
+
+
+
+public signOut(): void {
+  localStorage.removeItem('currentUser');
+
+
+}
+
 }

@@ -1,21 +1,3 @@
-<!--
-<mat-toolbar class="toolbar" >
-
-
-    <a  class="navbar-brand"  routerlink="/"  >Home</a>
-    <span class="menu-spacer"></span>
-    <div class="">
-
-
-    </div>
-    <span class="example-spacer"></span>
-    <div>
-
-
-    </div>
-
-
-</mat-toolbar> -->
 <mat-toolbar class="header">
 
     <div class="header__title">
@@ -23,7 +5,7 @@
         <mat-icon *ngIf="!isMenuOpened" class="header__title-button-icon">menu</mat-icon>
         <mat-icon *ngIf="isMenuOpened" class="header__title-button-icon">arrow_back</mat-icon>
       </button> -->
-      <h6 class="header__title-text">Admin Dashboard</h6>
+      <h6 class="header__title-text">Home</h6>
     </div>
 
     <div class="header-toolbar">
@@ -31,7 +13,9 @@
 
       <!-- <app-notifications></app-notifications>
       <app-email [emails]="emails$ | async"></app-email> -->
-     <!-- <app-user [user]="user$ | async" (signOut)="signOut()"></app-user> -->
+<!--
+      <app-user [user]="user$ | async" (signOut)="signOut()"></app-user> -->
+      <app-user  (signOut)="signOut()"></app-user>
     </div>
 
   </mat-toolbar>
