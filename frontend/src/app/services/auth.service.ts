@@ -12,7 +12,7 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
 login(user: UserForLogin) {
-    return this.http.post(this.baseUrl + '/auth/login', user);
+    return this.http.post(this.baseUrl + '/authenticate/login', user);
 }
 
 registerUser(user: UserForRegister) {

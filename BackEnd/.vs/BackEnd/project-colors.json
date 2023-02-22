@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5eeff888-d56d-410c-a54e-ad107f923f63": {
+      "ProjectGuid": "5eeff888-d56d-410c-a54e-ad107f923f63",
+      "DisplayName": "BackEnd.Repository",
+      "ColorIndex": 0
+    },
+    "7220a239-84d6-46b1-bf73-e7149bbea6d2": {
+      "ProjectGuid": "7220a239-84d6-46b1-bf73-e7149bbea6d2",
+      "DisplayName": "BackEnd",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "47e60708-3f2a-4f66-959e-f94b490a50ff": {
+      "ProjectGuid": "47e60708-3f2a-4f66-959e-f94b490a50ff",
+      "DisplayName": "BackEnd.Dtos",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

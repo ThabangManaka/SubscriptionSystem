@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { routes } from '../consts/routes';
 import { AuthService } from '../services/auth.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class LoginComponent implements OnInit {
   myForm: FormGroup;
+  public routers: typeof routes = routes;
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
@@ -27,8 +29,10 @@ export class LoginComponent implements OnInit {
       if (result !=null) {
         console.log(result)
 
-        //localStorage.setItem('currentUser',  result);
-       this.router.navigate(['home']);
+        localStorage.setItem('currentUser', JSON.stringify(result));
+      // this.router.navigate(['home']);
+
+       this.router.navigate([this.routers.HOME]);
       }
     } )
 
