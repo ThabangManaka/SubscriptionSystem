@@ -1,6 +1,8 @@
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import * as alertifyjs from 'alertifyjs';
+
 
 @Component({
   selector: 'app-register',
@@ -23,5 +25,7 @@ export class RegisterComponent implements OnInit {
   onSubmit(form: any) {
   console.log(form.value)
   this.authService.registerUser(form.value);
+
+  alertifyjs.success('message');
   }
 }
