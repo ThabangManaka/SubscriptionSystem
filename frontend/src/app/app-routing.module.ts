@@ -4,6 +4,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   },
   {
     path: 'register' , component : RegisterComponent
+  },
+
+  {
+    path: 'subscription' , component : SubscriptionComponent
   },
 ];
 
