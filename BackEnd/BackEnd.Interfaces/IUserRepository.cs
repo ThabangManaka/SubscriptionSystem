@@ -14,7 +14,7 @@ namespace BackEnd.Interfaces
         bool CheckUsersExits(string username);
         Task<User> Authenticate(string userName, string passwordText);
         void Register(UserDto userDto);
-
+        Task<bool> UserAlreadyExists(string userName);
         LoginResDto GetUserDetailsbyCredentials(string username);
     }
 }

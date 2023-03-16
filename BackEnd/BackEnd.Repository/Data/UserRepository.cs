@@ -94,6 +94,10 @@ public class UserRepository : IUserRepository
 
 
     }
+    public async Task<bool> UserAlreadyExists(string userName)
+    {
+        return await _context.Users.AnyAsync(x => x.UserName == userName);
+    }
 
     public LoginResDto GetUserDetailsbyCredentials(string username)
     {

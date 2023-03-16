@@ -25,10 +25,10 @@ builder.Services.AddCors();
 builder.Services.AddRazorPages();
 
 
-
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 builder.Services.AddControllers();
+
 var appSettingsSection = builder.Configuration.GetSection("AppSettings");
 builder.Services.Configure<AppSettings>(appSettingsSection);
 var appSettings = appSettingsSection.Get<AppSettings>();

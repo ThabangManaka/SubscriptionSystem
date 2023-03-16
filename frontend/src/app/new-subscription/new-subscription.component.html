@@ -1,0 +1,52 @@
+<mat-card >
+<mat-toolbar class="toolbar">
+  <h2 mat-dialog-title>{{message}}</h2>
+
+
+            <span class="toolbar-spacer"></span>
+    </mat-toolbar>
+      <mat-dialog-content>
+
+       <div class="container">
+         <form [formGroup]=" myForm" novalidate (ngSubmit)="onSubmit(myForm)" >
+           <div class="form-group">
+
+
+       <mat-form-field appearance="fill">
+         <mat-label>Product Name</mat-label>
+         <input matInput formControlName = "name" required>
+     </mat-form-field>
+       <br>
+       <mat-form-field appearance="fill">
+         <mat-label>Description</mat-label>
+
+         <textarea matInput  formControlName = "description"
+          required></textarea>
+       </mat-form-field>
+       <br>
+
+       <mat-form-field appearance="fill">
+         <mat-label>Price</mat-label>
+         <input matInput formControlName = "price"  type= "number" required>
+     </mat-form-field>
+
+
+
+     <br>
+     <mat-action-row class="BtnContainer">
+        <button mat-raised-button class="approveBtn" [disabled]="myForm.invalid"  type="submit" >
+         Submit
+          </button>
+
+             <button mat-raised-button  class="declineBtn"  type="button"(click)="onDecline()">
+               Cancel
+               </button>
+
+               </mat-action-row>
+         </div>
+
+         </form>
+
+      </div>
+   </mat-dialog-content>
+  </mat-card>

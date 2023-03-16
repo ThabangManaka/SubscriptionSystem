@@ -1,4 +1,6 @@
 ﻿using System.Net;
+using AutoMapper;
+using BackEnd.Dtos;
 using BackEnd.Interfaces;
 using BackEnd.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -9,62 +11,53 @@ public class SubscriptionController : Controller
 {
 
     private readonly IUnitOfWork uow;
-    //private readonly IMapper mapper;
+     private readonly IMapper mapper;
 
-    public SubscriptionController(IUnitOfWork uow)
+    public SubscriptionController(IUnitOfWork uow, IMapper mapper)
     {
         this.uow = uow;
-      //  this.mapper = mapper;
+       this.mapper = mapper;
     }
-
-
+    
     [HttpGet("get")]
-    public IEnumerable<Subscription> Get()
+    public async Task<IActionResult> Get()
     {
-        try
-        {
-            return uow.SubscriptionRepository.GetAllSubscription();
-        }
-        catch (Exception)
-        {
-            throw;
-        }
+        var subscriptions = await uow.SubscriptionRepository.GetAllSubscription();
+        var subscriptionsDto = mapper.Map<IEnumerable<SubscriptionDto>>(subscriptions);
+
+        return Ok(subscriptionsDto);
     }
     [HttpPost("add")]
-    public HttpResponseMessage AddSubscription([FromBody] Subscription subscriptions)
+    public async Task<IActionResult> AddSubscription([FromBody] SubscriptionDto subscriptionDto)
     {
+        var subscription = mapper.Map<Subscription>(subscriptionDto);
+        uow.SubscriptionRepository.AddSubscription(subscription);
+        await uow.SaveAsync();
+        return StatusCode(201);
+    }
 
-        try
-        {
-            if (ModelState.IsValid)
-            {
-                uow.SubscriptionRepository.AddSubscription(subscriptions);
-                uow.SaveAsync();
+    [HttpPut("update/{id}")]
+    public async Task<IActionResult> UpdateSubscription(int id, SubscriptionDto subscriptionDto)
+    {
+        if (id  != subscriptionDto.SubscriptionId)
+        return BadRequest("Update not allowed");
 
-                var response = new HttpResponseMessage()
-                {
-                    StatusCode = HttpStatusCode.OK
-                };
+        var subscriptionFomDb = await uow.SubscriptionRepository.FindSubscriptionbyId(id);
 
-                return response;
-            }
-            else
-            {
-                var response = new HttpResponseMessage()
-                {
+        if (subscriptionFomDb == null)
+         return BadRequest("Update not allowed");
+        mapper.Map(subscriptionDto, subscriptionFomDb);
 
-                    StatusCode = HttpStatusCode.BadRequest
-                };
+        await uow.SaveAsync();
+        return StatusCode(200);
+    }
 
-                return response;
-            }
-
-        }
-        catch (Exception)
-        {
-            throw;
-        }
-
+    [HttpDelete("delete/{id}")]
+    public async Task<IActionResult> DeleteSubscription(int id)
+    {
+        uow.SubscriptionRepository.DeleteSubscription(id);
+        await uow.SaveAsync();
+        return Ok(id);
     }
 
 }

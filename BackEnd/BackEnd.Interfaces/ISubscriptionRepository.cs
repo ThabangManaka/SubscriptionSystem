@@ -10,6 +10,8 @@ namespace BackEnd.Interfaces;
 public interface ISubscriptionRepository
 {
     bool AddSubscription(Subscription subscription);
-    List<Subscription> GetAllSubscription();
-    List<Subscription> GetAllSubscriptionById(int subscriptionnId);
+    Task<IEnumerable<Subscription>> GetAllSubscription();
+    Task<Subscription> FindSubscriptionbyId(int id);
+    void DeleteSubscription(int subscriptionId);
+ 
 }

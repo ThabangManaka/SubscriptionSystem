@@ -20,7 +20,17 @@
       "ProjectGuid": "47e60708-3f2a-4f66-959e-f94b490a50ff",
       "DisplayName": "BackEnd.Dtos",
       "ColorIndex": 2
+    },
+    "e3eec539-1af7-4769-8d18-fedf94af24e2": {
+      "ProjectGuid": "e3eec539-1af7-4769-8d18-fedf94af24e2",
+      "DisplayName": "BackEnd.Interfaces",
+      "ColorIndex": 3
+    },
+    "81581813-9993-4d4f-90ee-a13e4c5b9940": {
+      "ProjectGuid": "81581813-9993-4d4f-90ee-a13e4c5b9940",
+      "DisplayName": "BackEnd.Models",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

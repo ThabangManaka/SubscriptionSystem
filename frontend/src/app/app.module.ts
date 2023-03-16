@@ -1,6 +1,6 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,8 +11,11 @@ import { SubscriptionComponent } from './subscription/subscription.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { SubscriptionModule } from './pages/subscription/subscription.module';
+import { NewSubscriptionComponent } from './new-subscription/new-subscription.component';
+import { SpinnerInterceptor } from './helpers/spinner.interceptor';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ import { SharedModule } from './shared/shared.module';
     RegisterComponent,
     HomeComponent,
     SubscriptionComponent,
+    NewSubscriptionComponent,
     NavbarComponent
   ],
   imports: [
@@ -29,11 +33,12 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    SubscriptionModule,
     FormsModule,
     ReactiveFormsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [  {provide: HTTP_INTERCEPTORS, useClass:SpinnerInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -26,3 +26,12 @@ mat-card {
       cursor: pointer;
       text-decoration: none;
     }
+    mat-form-field {
+      mat-error {
+          display: none !important;
+      }
+
+      mat-error:first-child {
+          display: block !important;
+      }
+  }

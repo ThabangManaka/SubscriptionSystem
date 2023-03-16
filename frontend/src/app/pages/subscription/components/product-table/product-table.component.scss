@@ -1,0 +1,50 @@
+@import 'src/app/styles/colors';
+@import 'src/app/styles/font';
+@import 'src/app/styles/variables';
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+
+  }
+  mat-card {
+    width: 70%;
+    margin: 5% auto;
+    border-radius: 8px;
+  }
+
+  .employee-table {
+    &__content {
+      @media (max-width: $small) {
+        overflow-x: scroll;
+      }
+    }
+
+    &__table {
+      width:100%;
+      box-shadow: none;
+
+      @media (max-width: $small) {
+        width: 200%;
+      }
+    }
+
+    &__table-checkbox {
+      width: 32px;
+      padding-left: 24px;
+    }
+
+    &__table-header {
+      padding: 1rem;
+      font-size: $fs-small;
+    }
+
+    &__table-body {
+      padding: 1rem;
+      font-size: $fs-small;
+    }
+  }
+

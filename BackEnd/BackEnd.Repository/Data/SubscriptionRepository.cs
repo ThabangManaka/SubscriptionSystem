@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BackEnd.Interfaces;
 using BackEnd.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace BackEnd.Repository.Data;
 
@@ -31,19 +32,21 @@ public class SubscriptionRepository : ISubscriptionRepository
             return false;
         }
     }
-    public List<Subscription> GetAllSubscription()
-    {
-        var result = (from subscription in _context.Subscriptions
-                      select subscription).ToList();
 
-        return result;
+
+    public async Task<IEnumerable<Subscription>> GetAllSubscription()
+    {
+
+      return await _context.Subscriptions.ToListAsync();
     }
-    public List<Subscription> GetAllSubscriptionById(int subscriptionnId)
+    public async Task<Subscription> FindSubscriptionbyId(int id)
     {
-        var result = (from subscription in _context.Subscriptions
-                      where subscription.SubscriptionId == subscriptionnId
-                      select subscription).ToList();
+        return await _context.Subscriptions.FindAsync(id);
+    }
 
-        return result;
+    public void DeleteSubscription(int subscriptionId)
+    {
+        var subscription = _context.Subscriptions.Find(subscriptionId);
+        _context.Subscriptions.Remove(subscription);
     }
 }
